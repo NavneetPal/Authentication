@@ -1,0 +1,22 @@
+[{
+    "path":"signup",
+    "method":"post",
+    "action":"auth.signup",
+    "pathFromRoot":false
+},{
+    "path":"signin",
+    "method":"post",
+    "action":"auth.signin",
+    "pathFromRoot":false
+},{
+    "path":"signout",
+    "method":"get",
+    "action":"auth.signout",
+    "pathFromRoot":false
+},{
+    "path":"/protected",
+    "method":"get",
+    "action":"auth.protected",
+    "globalMiddlewares":["middleware.isSignedIn","middleware.isAdmin"],
+    "pathFromRoot":true
+}]

@@ -1,0 +1,19 @@
+[{
+    "path":"",
+    "method":"get",
+    "action":"blog.showBlogs",
+    "globalMiddlewares":["middleware.isSignedIn","middleware.isAdmin"],
+    "middlewares":["blog.isNehaAdmin"],
+    "pathFromRoot":true
+},
+{
+    "path":"/show",
+    "method":"get",
+    "action":"blog.showAll",
+    "pathFromRoot":true
+},{
+    "path":"/submit",
+    "method":"post",
+    "action":"blog.createBlog",
+    "pathFromRoot":true
+}]

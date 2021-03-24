@@ -1,0 +1,9 @@
+
+*************************** TO CHECK WHETHER THE FILE EXIST OR NOT SYNCHRONOUSLY************************************************
+
+const fs = require("fs"); // Or `import fs from "fs";` with ESM
+if (fs.existsSync(path)) {
+    // Do something
+} 
+
+********************************************************************************************************************************

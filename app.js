@@ -17,9 +17,12 @@ const fp=require('find-free-port');
 const morgan=require('morgan');
 const config=require('./config/config.json');
 const crons=require('./core/cron');
+const swaggerUi=require('swagger-ui-express');
+const swaggerFile=require('./swagger_output.json');
 //Middleware
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile));
 
 let morganBody='';
 morgan.token('header', function (req) { return JSON.stringify(req.headers) })

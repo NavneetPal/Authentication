@@ -28,6 +28,8 @@
     "node-cron": "^3.0.0",
     "prompt-confirm": "^2.0.4",
     "sequelize": "^6.5.0",
+    "swagger-autogen": "^2.7.4",
+    "swagger-ui-express": "^4.1.6",
     "umzug": "^2.3.0"
   },
   "devDependencies": {

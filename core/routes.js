@@ -259,5 +259,6 @@ for (let api of apis) {
 	}
 }
 
-console.log(allRoutes);
+//You can see all the orutes that you have made by consoling it on the screen
+//console.log(allRoutes);
 module.exports = allRoutes;

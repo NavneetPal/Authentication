@@ -1,0 +1,19 @@
+[
+ {
+  "path": "",
+  "method": "",
+  "action": "",
+  "globalMiddlewares": [],
+  "middlewares": [],
+  "pathFromRoot": null
+ },
+ {
+  "path": "/user",
+  "method": "get",
+  "action": "user.showUser",
+  "middlewares": [
+   "user.isNew"
+  ],
+  "pathFromRoot": false
+ }
+]

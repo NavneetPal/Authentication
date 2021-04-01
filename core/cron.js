@@ -3,7 +3,6 @@ const fs=require('fs');
 const path=require('path');
 
 const basePath=path.join(__dirname,'..','cron')
-console.log(basePath);
 const files=fs.readdirSync(basePath,{withFileTypes:true})
 .filter((dirent)=>dirent.isFile())
 .map(dirent=>dirent.name)

@@ -8,7 +8,7 @@ require('./core/multer')
 const express=require('express');
 const app=express();
 const chalk=require('chalk');
-const Confirm=require('prompt-confirm');
+const Confirm=require('prompt-confirm')
 const bodyParser=require('body-parser');
 const cookieParser=require('cookie-parser');
 const authRoutes=require('./routes/auth');
@@ -65,6 +65,10 @@ app.use((req,res,next)=>{
 for(let route of routes){
     app[route.method](route.path,route.middlewares,route.action);
 }
+
+app.get('/',(req,res)=>{
+    res.status(200).send('Homepage');
+})
 
 //migration
 umzug.pending()
